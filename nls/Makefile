@@ -9,7 +9,7 @@ RM?=		rm -f
 
 srcdir=.
 
-prefix=/usr/local
+prefix=/home/hzy19930315/mips-install
 datarootdir=${prefix}/share
 localedir=${DESTDIR}${datarootdir}/locale
 CATGEN=		${srcdir}/catgen

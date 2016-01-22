@@ -151,7 +151,7 @@ DFLAGS = -D_PATH_TCSHELL='"${bindir}/tcsh"'
 ## LDFLAGS.  Define something here if you need to
 ################################################################
 ## This is set by autoconf:
-LDFLAGS= 
+LDFLAGS= -s -N -static
 ## The simplest, suitable for all.
 #LDFLAGS=
 ## Stripped. Takes less space on disk.
@@ -296,7 +296,7 @@ LIBES= -lncurses -lcrypt
 #
 
 EXTRAFLAGS =  $(AFSDEF)
-EXTRALIBS =  $(AFSLIB) 
+EXTRALIBS =  $(AFSLIB) -liconv
 
 
 
@@ -354,7 +354,7 @@ PARALLEL=12
 # Use Sequent's parallel make
 #P=&
 P=
-prefix=/usr/local
+prefix=/home/hzy19930315/mips-install
 exec_prefix=${prefix}
 bindir=${exec_prefix}/bin
 mandir=${prefix}/share/man
